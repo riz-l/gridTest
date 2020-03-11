@@ -1,0 +1,21 @@
+.photo-grid {
+  display: grid;
+  gap: 1rem;
+
+  /* Allows browser to auto-calculate rows and columns, and wrap when needed */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  /* Every row has a height of 240px */
+  grid-auto-rows: 240px;
+}
+
+@media screen and (min-width: 600px) {
+  .card-tall {
+    /* Any item will now span over 2 rows, with an automatic end point */
+    grid-row: span 2 / auto;
+  }
+
+  .card-wide {
+    /* Any item will now span over 2 columns, with an automatic end point */
+    grid-column: span 2 / auto;
+  }
+}

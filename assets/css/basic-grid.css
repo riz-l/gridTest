@@ -1,0 +1,7 @@
+.basic-grid {
+  display: grid;
+  gap: 1rem;
+
+  /* Allows browser to auto-calculate rows and columns, and wrap when needed */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
